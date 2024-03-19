@@ -1,61 +1,61 @@
 {
-    "name": "codeofdigital/laravel-url-shortener",
-    "description": "Powerful URL shoterning tools using different drivers for your Laravel projects",
-    "homepage": "https://github.com/codeofdigital/laravel-url-shortener",
-    "keywords": [
-        "codeofdigital",
-        "laravel",
-        "url",
-        "url-shortening",
-        "shortener",
-        "short-url",
-        "shortening",
-        "bit.ly",
-        "shorte.st",
-        "tinyurl",
-        "is.gd",
-        "cutt.ly"
-    ],
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Bryan Adam Loh",
-            "email": "bryanadamloh97@gmail.com"
-        }
-    ],
-    "require": {
-        "php": "^7.2|^8.0",
-        "guzzlehttp/guzzle": "^6.2 || ^7.0",
-        "guzzlehttp/promises": "^1.0",
-        "guzzlehttp/psr7": "^1.4",
-        "psr/http-message": "^1.0"
-    },
-    "require-dev": {
-        "illuminate/routing": "^5.1 || ^6.0 || ^7.0 || ^8.0",
-        "phpunit/phpunit": "^8.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "CodeOfDigital\\LaravelUrlShortener\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "CodeOfDigital\\LaravelUrlShortener\\Tests\\": "tests/"
-        }
-    },
-    "scripts": {
-        "tests": "./vendor/bin/phpunit --colors=always"
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "CodeOfDigital\\LaravelUrlShortener\\UrlShortenerServiceProvider"
-            ],
-            "aliases": {
-                "UrlShortener": "CodeOfDigital\\LaravelUrlShortener\\Facades\\UrlShortener"
-            }
-        }
+  "name": "codeofdigital/laravel-url-shortener",
+  "description": "Powerful URL shoterning tools using different drivers for your Laravel projects",
+  "homepage": "https://github.com/codeofdigital/laravel-url-shortener",
+  "keywords": [
+    "codeofdigital",
+    "laravel",
+    "url",
+    "url-shortening",
+    "shortener",
+    "short-url",
+    "shortening",
+    "bit.ly",
+    "shorte.st",
+    "tinyurl",
+    "is.gd",
+    "cutt.ly"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bryan Adam Loh",
+      "email": "bryanadamloh97@gmail.com"
     }
+  ],
+  "require": {
+    "php": "^8.0|^8.1|^8.2",
+    "guzzlehttp/guzzle": "^7.2| ^7.3",
+    "guzzlehttp/promises": "^2.0",
+    "guzzlehttp/psr7": "^2.6",
+    "psr/http-message": "^2.0"
+  },
+  "require-dev": {
+    "illuminate/routing": "^9.0| ^10.0|^11.0",
+    "phpunit/phpunit": "^9.5|^10.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "CodeOfDigital\\LaravelUrlShortener\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CodeOfDigital\\LaravelUrlShortener\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "tests": "./vendor/bin/phpunit --colors=always"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "CodeOfDigital\\LaravelUrlShortener\\UrlShortenerServiceProvider"
+      ],
+      "aliases": {
+        "UrlShortener": "CodeOfDigital\\LaravelUrlShortener\\Facades\\UrlShortener"
+      }
+    }
+  }
 }
